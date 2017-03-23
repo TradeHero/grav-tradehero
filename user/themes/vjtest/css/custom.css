@@ -71,6 +71,19 @@ footer ul li a {
     background: linear-gradient(red, #CC002B);
 }
 
+.green-subtitile {
+    z-index: 46;
+    background-color: transparent;
+    color: #6DB63D;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: halcom, sans-serif;
+    font-weight: 700;
+    margin-top: 31px;
+    position: relative;
+    margin-left: 0.49%;
+}
+
 
 /* ------------------------------------------------------------------ */
 

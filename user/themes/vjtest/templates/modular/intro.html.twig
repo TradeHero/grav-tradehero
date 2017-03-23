@@ -37,8 +37,16 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12">
-                                <p>Download now to get started!</p>
+                            <p class="green-subtitile">{{page.header.download_title}}</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-04">
+                                [qrcode size=300 label="Scan me" border=true]Hello, I'm a QR Code.[/qrcode]
+                            </div>
+                            <div class="col-sm-02">
+                                {{ page.media[page.header.divider].html() }}
+                            </div>
+                            <div class="col-sm-06">
                                 <div class="badges">
                                     <a class="badge-link" href="#"><img src="{{ page.media[page.header.icon_google_play].url }}" width="40%" alt=""></a>
                                     <a class="badge-link" href="#"><img src="{{ page.media[page.header.icon_apple_appstore].url }}" width="40%" alt=""></a>
