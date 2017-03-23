@@ -1,0 +1,19 @@
+{
+    "remotePath": "./grav.tradehero.mobi/",
+    "host": "benjy.dreamhost.com",
+    "username": "viraj2252",
+    "password": "winwin@1",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ]
+}
