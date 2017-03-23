@@ -1,0 +1,154 @@
+﻿header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow-y: hidden;
+    background: white;
+    color: black;
+}
+
+.navbar-default .nav>li>a,
+.navbar-default .nav>li>a:focus {
+    color: #000;
+}
+
+.navbar-default .nav>li>a:hover {
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar-default.affix .navbar-header .navbar-brand {
+    color: #000;
+}
+
+.navbar-default.affix .navbar-header .navbar-brand:hover,
+.navbar-default.affix .navbar-header .navbar-brand:focus {
+    color: #000;
+}
+
+.navbar-default.affix .nav>li>a,
+.navbar-default.affix .nav>li>a:focus {
+    color: #000;
+}
+
+.navbar-default.affix .nav>li>a:hover,
+.navbar-default.affix .nav>li>a:focus:hover {
+    color: #000;
+}
+
+footer,
+footer ul li a {
+    color: white;
+}
+
+.feature-item {
+    background: url('../images/bg_yellow.png') no-repeat;
+    height: 213px;
+    width: 197px;
+    padding: 10px;
+    text-align: center;
+}
+
+.virtual,
+.live {
+    color: white;
+}
+
+.virtual ul>li,
+.live ul>li {
+    font-size: 26px;
+}
+
+.bg-virtual {
+    background: #2166FF;
+    background: -webkit-linear-gradient(#2166CC, #2166FF);
+    background: linear-gradient(#2166CC, #2166FF);
+}
+
+.bg-live {
+    background: #CC002B;
+    background: -webkit-linear-gradient(red, #CC002B);
+    background: linear-gradient(red, #CC002B);
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+/* b. Preloader
+ ------------------------------------------------------------------ */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99999;
+    height: 100%;
+}
+
+#status {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    padding: 0;
+}
+
+@media (max-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    #feature-container .text-center {
+        left: 40% !important;
+    }
+    section.features .feature-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    #feature-container .text-center {
+        left: 40% !important;
+    }
+    section.features .feature-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    #feature-container .text-center {
+        left: 45% !important;
+    }
+    section.features .feature-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    #feature-container .text-center {
+        left: 50% !important;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    #feature-container .text-center {
+        left: 50% !important;
+    }
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+    #feature-container .text-center {
+        left: 50% !important;
+    }
+}

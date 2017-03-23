@@ -1,0 +1,44 @@
+1490775674
+a:2:{s:7:"content";s:2291:"<section id="virtual" class="virtual bg-virtual">
+        <div class="text-center" style="margin-top: -140px;">
+            <img src="https://portalvhdskgrrf4wksb8vq.blob.core.windows.net/static/togle_virtual.png" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6 portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="/user/pages/01.home/_features/virtual_screen.png" width="100%" class="img-responsive" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <br/>
+                                <br/>
+                                <h2>Virtual trading features</h2>
+                                <br/>
+                                <br/>
+                                <ul>
+                                    <li>Start with 100K virtual $ and practice trading risk free</li>
+                                    <li>Trade virtual stocks and FX across 35 stock exchanges and 38 currency pairs</li>
+                                    <li>Access the trades and tips of validated Heroes</li>
+                                    <li>Trading competitions, earn real cash prizes as you top the leaderboard</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>";s:12:"content_meta";N;}

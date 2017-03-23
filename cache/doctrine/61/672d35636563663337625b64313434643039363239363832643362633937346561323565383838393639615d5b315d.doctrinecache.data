@@ -1,0 +1,93 @@
+1490599815
+a:2:{s:7:"content";s:3646:"<section id="pricing">
+
+  <div class="row section-head">
+    <h1>Pricing Tables.</h1>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+voluptatem sequi nesciunt.</p>
+  </div>
+
+  <div class="row">
+    <div class="pricing-tables bgrid-quarters s-bgrid-halves">
+              <div class="column">
+          <div class="price-block">
+            <h3 class="plan-title"><i class="fa fa-cog"></i>Starter</h3>
+            <p class="plan-price">Free <span>per month</span></p>
+
+            <ul class="features">
+                             <li>1GB Storage</li> 
+                            <li>5GB Bandwidth</li> 
+                            <li>2 Domains</li> 
+                            <li>3 Databases</li> 
+                            <li>1 FTP Account</li> 
+                            <li>25 Email Accounts</li> 
+                         </ul>
+
+            <footer class="plan-sign-up">
+                             <a class="button" href="#">Sign Up</a>
+                          </footer>
+       </div> 
+     </div>
+           <div class="column">
+          <div class="price-block">
+            <h3 class="plan-title"><i class="fa fa-thumbs-up"></i>Standard</h3>
+            <p class="plan-price">$9.99 <span>per month</span></p>
+
+            <ul class="features">
+                             <li>3GB Storage</li> 
+                            <li>10GB Bandwidth</li> 
+                            <li>3 Domains</li> 
+                            <li>5 Databases</li> 
+                            <li>3 FTP Account</li> 
+                            <li>30 Email Accounts</li> 
+                         </ul>
+
+            <footer class="plan-sign-up">
+                             <a class="button" href="#">Sign Up</a>
+                          </footer>
+       </div> 
+     </div>
+           <div class="column">
+          <div class="price-block">
+            <h3 class="plan-title"><i class="fa fa-star"></i>Premium</h3>
+            <p class="plan-price">$19.99 <span>per month</span></p>
+
+            <ul class="features">
+                             <li>10GB Storage</li> 
+                            <li>25GB Bandwidth</li> 
+                            <li>5 Domains</li> 
+                            <li>10 Databases</li> 
+                            <li>10 FTP Account</li> 
+                            <li>50 Email Accounts</li> 
+                         </ul>
+
+            <footer class="plan-sign-up">
+                             <a class="button" href="#">Sign Up</a>
+                          </footer>
+       </div> 
+     </div>
+           <div class="column">
+          <div class="price-block">
+            <h3 class="plan-title"><i class="fa fa-trophy"></i>Ultimate</h3>
+            <p class="plan-price">$29.99 <span>per month</span></p>
+
+            <ul class="features">
+                             <li>30GB Storage</li> 
+                            <li>Unlimited Bandwidth</li> 
+                            <li>10 Domains</li> 
+                            <li>15 Databases</li> 
+                            <li>10 FTP Account</li> 
+                            <li>50 Email Accounts</li> 
+                         </ul>
+
+            <footer class="plan-sign-up">
+                             <a class="button" href="#">Sign Up</a>
+                          </footer>
+       </div> 
+     </div>
+    </div>
+</div>
+
+</section> ";s:12:"content_meta";N;}

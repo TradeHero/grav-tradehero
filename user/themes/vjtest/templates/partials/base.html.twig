@@ -1,0 +1,78 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="{{ grav.language.getLanguage ?: 'en' }}"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="{{ grav.language.getLanguage ?: 'en' }}"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="{{ grav.language.getLanguage ?: 'en' }}"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="{{ grav.language.getLanguage ?: 'en' }}"> <!--<![endif]-->
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://lib/bootstrap/css/bootstrap.min.css', 101) %}
+        {% do assets.addCss('https://fonts.googleapis.com/css?family=Lato', 100) %}
+        {% do assets.addCss('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', 99) %}
+        {% do assets.addCss('https://fonts.googleapis.com/css?family=Muli', 98) %}
+        {% do assets.addCss('theme://lib/font-awesome/css/font-awesome.min.css', 97) %}
+        {% do assets.addCss('theme://lib/simple-line-icons/css/simple-line-icons.css', 96) %}
+        {% do assets.addCss('theme://lib/device-mockups/device-mockups.min.css', 95) %}
+        {% do assets.addCss('theme://css/new-age.min.css', 94) %}
+        {% do assets.addCss('theme://css/custom.css', 93) %}
+        {% do assets.addCss('theme://css/toggle.css', 92) %}
+    {% endblock %}
+    {{ assets.css() }}    
+    
+    <script src="{{ theme_url }}/js/modernizr.js"></script>
+{% endblock head%}
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+
+    <div id="preloader">
+            <div id="status">
+                <img src="{{ theme_url }}/images/preloader.gif" height="64" width="64" alt="">
+            </div>
+    </div>
+
+    {% block header %}
+        {% include 'partials/header.html.twig' %}
+    {% endblock %}
+
+    {% block body %}
+        {% block content %}{% endblock %}
+    {% endblock %}
+
+    {% block footer %}
+        {% include 'partials/footer.html.twig' %}
+    {% endblock %}
+
+{% block javascripts %}
+    {% do assets.add('jquery',101) %}
+    {% do assets.addJs('theme://lib/bootstrap/js/bootstrap.min.js') %}
+    {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js') %}
+    {% do assets.addJs('theme://js/jquery-migrate-1.2.1.min.js') %}
+    {% do assets.addJs('theme://js/jquery.flexslider.js') %}
+    {% do assets.addJs('theme://js/waypoints.js') %}
+    {% do assets.addJs('theme://js/jquery.fittext.js') %}
+    {% do assets.addJs('theme://js/jquery.fitvids.js') %}
+    {% do assets.addJs('theme://js/imagelightbox.js') %}
+    {% do assets.addJs('theme://js/jquery.prettyPhoto.js') %}
+    {% do assets.addJs('theme://js/main.js') %}
+    {% do assets.addJs('theme://js/new-age.min.js') %}
+{% endblock %}
+{{ assets.js() }}
+</body>
+</html>

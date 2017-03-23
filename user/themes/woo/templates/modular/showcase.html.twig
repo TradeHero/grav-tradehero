@@ -1,0 +1,28 @@
+<section id="hero">
+{% set hour = now | date("G") %}
+{% if hour >= 9 and hour < 17 %}
+    <p>Time for cookies!</p>
+{% else %}
+    <p>Time to bake more cookies!</p>
+{% endif %}
+ <div class="row">
+   <div class="twelve columns">
+     <div class="hero-text">
+      <h1 class="responsive-headline">{{ page.header.title }}</h1>
+      {{ content }}
+    </div>
+
+    {% if page.header.buttons %}
+     <div class="buttons">
+       {% for button in page.header.buttons %}
+         <a class="{{ button.class }}" href="{{ button.url }}">{{ button.text }}</a>
+       {% endfor %}
+     </div>
+   {% endif %}
+
+   <div class="hero-image">
+    {{ page.media[page.header.showcase_image].html() }}
+  </div>
+</div>
+</div>
+</section>

@@ -1,0 +1,45 @@
+1490762917
+a:2:{s:7:"content";s:2082:"<h1>Style Guide.</h1>
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditipraesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+<h3>Paragraph and Image</h3>
+<p><img alt="Sample Image" src="/images/8/1/f/d/7/81fd7fa3d5790d48c0f87a4326889a9b7df2cada-sample-image.jpeg" /> {.pull-left}
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+posuere nunc justo tempus leo.</p>
+<p>A <a href="/en/demo">link</a>,
+<strong>strong text</strong>,
+<strong><em>em text</em></strong></p>
+<h3>Block Quotes</h3>
+<blockquote>
+<p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+to do what you believe is great work. And the only way to do great work is to love what you do.
+If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+<cite><a href="/en/demo">Steve Jobs</a></cite></p>
+</blockquote>
+<h3>Example Lists</h3>
+<ol>
+<li>Here is an example</li>
+<li>of an ordered list</li>
+</ol>
+<ul>
+<li>Here is an example</li>
+<li>of an unordered list</li>
+</ul>
+<hr />
+<h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+<hr />
+<h3>Button</h3>
+<p><a href="/en/demo">button</a> {.button}</p>";s:12:"content_meta";N;}

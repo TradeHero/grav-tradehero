@@ -1,0 +1,21 @@
+1490353116
+a:2:{s:7:"content";s:804:"<section id="hero">
+hi
+ <div class="row">
+   <div class="twelve columns">
+     <div class="hero-text">
+      <h1 class="responsive-headline">The perfect template to showcase your awesome product and service.</h1>
+      <p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. Quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+    </div>
+
+         <div class="buttons">
+                <a class="button trial animated shake" href="#">Free Trial</a>
+                <a class="button learn-more smoothscroll" href="#">Learn More</a>
+            </div>
+   
+   <div class="hero-image">
+    <img src="/user/pages/01.home/_showcase/hero-image.png" />
+  </div>
+</div>
+</div>
+</section>";s:12:"content_meta";N;}
