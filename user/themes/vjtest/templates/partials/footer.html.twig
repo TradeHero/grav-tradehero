@@ -1,46 +1,48 @@
 <footer style="overflow: hidden;">
-    <div class="row">         
-        <div class="six columns info">
-            <div class="footer-logo">
-                <a href="{{ base_url_absolute }}">
-                    <img src="{{ theme_url }}/images/logo.png" alt="" style="max-width: 70px;" />
-                </a>
+    <div class="container">
+        <div class="row">
+            <div class="six columns info">
+                <div class="footer-logo">
+                    <a href="{{ base_url_absolute }}">
+                        <img src="{{ theme_url }}/images/logo.png" alt="" style="max-width: 120px;" />
+                    </a>
+                </div>
+                <p>
+                    {{ site.footer.text }}
+                </p>
             </div>
-            <p>
-                {{ site.footer.text }}
-            </p>
         </div>
-        <div class="six columns right-cols">
-            <div class="row">
+        <div class="row">
+            <div class="md-col-6">
                 <div class="columns">
                     <h3 class="address">{{ site.footer.address.title }}</h3>
                     <p>
-                        {% for item in site.footer.address.lines %}
-                           {{ item.line }} <br>
-                        {% endfor %}
+                        {% for item in site.footer.address.lines %} {{ item.line }} <br> {% endfor %}
                     </p>
                 </div>
-                <div class="columns">
-                    <h3 class="social">{{ site.footer.social_title }}</h3>
-                    <ul>
-                        {% for item in site.social %}
-                            <li><a href="{{ item.url }}">{{ item.icon|capitalize }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="columns last">
-                    <h3 class="contact">{{ site.footer.contact.title }}</h3>
-                    <ul>
-                        {% for item in site.footer.contact.lines %}
-                            <li><a href="{{ item.url }}">{{ item.text }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
+            </div>
+            <div class="md-col-6">
+                <ul class="footer-social">
+    {% for item in site.social %}
+        <li><a href="{{ item.url }}"><i class="fa fa-{{ item.icon }} fa-4x"></i></a></li>
+    {% endfor %}
+</ul>
             </div>
         </div>
-        <p class="copyright">&copy; 2017 TradeHero</p>
-        <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+        <div class="row">
+            <div class="footer-riskwarning">
+                <p><strong>{{'FOOTER.RISK_WARNING_TITLE'|t}}</strong></p>
+                {{'FOOTER.RISK_WARNING_TEXT'|t}}
+                </br>
+                <p><strong>{{'FOOTER.DISCLAIMER_TITLE'|t}}</strong></p>
+                {{'FOOTER.DISCLAIMER_TEXT'|t}}
+            </div>
+            <p>&nbsp;</p>
+            <p class="copyright">{{ 'FOOTER.TRADEMARK'|t }}</p>
+            <div id="go-top">
+                <p>&nbsp;</p>
+                <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+            </div>
         </div>
     </div>
 </footer>

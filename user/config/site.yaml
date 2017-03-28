@@ -15,3 +15,11 @@ summary:
   delimiter: '==='
 blog:
   route: /blog
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  -  url: "#"
+     icon: facebook
+  -  url: "#"
+     icon: twitter
+  -  url: "#"
+     icon: google-plus  
