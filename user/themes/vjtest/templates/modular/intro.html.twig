@@ -42,11 +42,18 @@
                         <div class="row" style="text-align: center;">
                             <div class="col-md-4 col-sm-4">
                             {#QR code goes here#}
-                                {#[qrcode size=300 label="Scan me" border=true]Hello, I'm a QR Code.[/qrcode]#}
-                                QU Code
+                            <div>
+                                {{page.header.qr_text}}
                             </div>
-                            <div class="col-md-2 col-sm-2">
-                                {{ page.media[page.header.icon_divider].html() }}
+                            <div>
+                                <img src="https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl=https://tradehero.mobi/{{grav.language.getLanguage ?: 'en'}}/download" />
+                            </div>                                
+                            </div>
+                            <div class="col-md-2 col-sm-2 vertical-hide">
+                                {{ page.media[page.header.icon_divider_vertical].html() }}
+                            </div>
+                            <div class="col-md-2 col-sm-2 horizontal-hide">
+                                {{ page.media[page.header.icon_divider_horizontal].html() }}
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="badges">

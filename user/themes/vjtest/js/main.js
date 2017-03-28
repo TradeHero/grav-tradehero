@@ -17,7 +17,7 @@
         // will fade out the whole DIV that covers the website. 
         $("#preloader").delay(500).fadeOut("slow").remove();
 
-        $('.js #features .device-container').addClass("animated fadeInUpBig");
+        $('.js #features .device-container').addClass("animated fadeInRightBig");
         $('.js #features .buttons a.trial').addClass("animated shake");
         $('#data-live').hide();
     })
@@ -92,10 +92,19 @@
             $('#data-virtual').hide();
             $('#data-live').show();
             $('#feature-container').toggleClass('bg-virtual bg-live');
+
+            $('#data-live').removeClass('animated fadeOutLeft');
+            $('#data-live').addClass('animated fadeInLeft');
+            $('#data-virtual').removeClass('animated fadeInRight');
+            $('#data-virtual').addClass('animated fadeOutRight');
         } else {
             $('#data-virtual').show();
             $('#data-live').hide();
             $('#feature-container').toggleClass('bg-live bg-virtual');
+            $('#data-virtual').removeClass('animated fadeOutRight');
+            $('#data-virtual').addClass('animated fadeInRight');
+            $('#data-live').removeClass('animated fadeInLeft');
+            $('#data-live').addClass('animated fadeOutLeft');
         }
     });
 

@@ -31,14 +31,13 @@
                             <div class="col-md-12">
                                 <br/>
                                 <br/>
-                                <h2>Virtual trading features</h2>
+                                <h2>{{page.header.virtual_features_title}}</h2>
                                 <br/>
                                 <br/>
                                 <ul>
-                                    <li>Start with 100K virtual $ and practice trading risk free</li>
-                                    <li>Trade virtual stocks and FX across 35 stock exchanges and 38 currency pairs</li>
-                                    <li>Access the trades and tips of validated Heroes</li>
-                                    <li>Trading competitions, earn real cash prizes as you top the leaderboard</li>
+                                    {% for feature in page.header.virtual_features_list %}
+                                        <li>{{feature.text}}</li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>
