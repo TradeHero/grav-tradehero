@@ -17,9 +17,9 @@ blog:
   route: /blog
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  -  url: "#"
+  -  url: "https://www.facebook.com/TradeHero"
      icon: facebook
-  -  url: "#"
+  -  url: "https://twitter.com/TradeHeroMobile"
      icon: twitter
-  -  url: "#"
-     icon: google-plus  
+  -  url: "https://www.youtube.com/user/TradeHeroMobile"
+     icon: youtube  

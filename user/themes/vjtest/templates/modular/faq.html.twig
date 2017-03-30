@@ -1,0 +1,37 @@
+<section id="faq" class="faq">
+  <div class="container">
+  {% set sectionNo = 1 %}
+  {% set questionNo = 1 %}
+    {% for section in page.header.faqs %}
+      <div class="row">
+        <h2 class="animated fadeInRightBig">{{section.title}}</h2>
+        <p class="animated fadeInRightBig">{{section.description}}</p>
+        <div class="panel-group" id="accordion">
+          {% for question in section.questions%}
+            <div class="panel panel-default animated fadeInRightBig">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{sectionNo}}_{{questionNo}}">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    {{ question.question }}                  
+                  </h4>
+                </div>
+              </a>
+              <div id="collapse_{{sectionNo}}_{{questionNo}}" class="panel-collapse collapse">
+                <div class="panel-body">
+                  {{ question.answer }}
+                </div>
+              </div>
+            </div>
+          {% set questionNo = questionNo + 1 %}
+          {% endfor %}
+          {% for specialnote in section.special_notes%}
+            <div class="animated fadeInRightBig">{{specialnote.text}}</div>
+          {% endfor %}
+        </div>
+      </div>
+      </br></br>
+      {% set sectionNo = sectionNo + 1 %}
+      {% set questionNo = 1 %}
+    {% endfor %}
+  </div>
+</section>
