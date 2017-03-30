@@ -44,8 +44,6 @@ footer {
     line-height: 54px;
     color: #424a56;
     margin: 0 10px 0 0;
-    padding: 0;
-    float: right;
 }
 
 .footer-social li {
@@ -164,22 +162,31 @@ footer ul li a {
     padding: 0;
 }
 
+
 /* ------------------------------------------------------------------ */
 
-    /*Accordian*/
+
+/*Accordian*/
+
 
 /* ------------------------------------------------------------------ */
 
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
-    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
-    float: right;        /* adjust as needed */
-    color: grey;         /* adjust as needed */
+    font-family: 'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content: "\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: right;
+    /* adjust as needed */
+    color: grey;
+    /* adjust as needed */
 }
+
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e080";
+    /* adjust as needed, taken from bootstrap.css */
 }
 
 #accordion a {
@@ -187,6 +194,18 @@ footer ul li a {
     color: #337ab7 !important;
 }
 
+.contact form {
+    text-align: left !important;
+}
+
+.contact form .form-field {
+    margin-bottom: 20px;
+}
+
+footer p,
+footer ul li a {
+    font-size: 13px !important;
+}
 
 @media (min-width:320px) {
     /* smartphones, iPhone, portrait 480x320 phones */
@@ -212,6 +231,12 @@ footer ul li a {
     }
     .horizontal-hide {
         display: block;
+    }
+    #features .device {
+        margin-top: 50px;
+    }
+    footer .footer-social {
+        margin-bottom: 40px;
     }
 }
 
@@ -266,6 +291,12 @@ footer ul li a {
     }
     .horizontal-hide {
         display: none;
+    }
+    #features .device {
+        margin-top: 0px;
+    }
+    footer .footer-social {
+        margin-bottom: 30px;
     }
 }
 

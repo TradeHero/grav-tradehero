@@ -1,5 +1,5 @@
 ---
-title: TradeHero
+title: 'TradeHero ~ FAQ'
 content:
     items: '@self.modular'
     order:
@@ -12,3 +12,4 @@ onpage_menu: true
 body_class: index
 header_class: alt
 ---
+

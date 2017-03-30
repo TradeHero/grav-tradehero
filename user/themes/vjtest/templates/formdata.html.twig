@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %} {% block content %}
+<section id="about" style="padding: 90px 30px 70px !important; text-align: center;">
+    <div class="row">
+        <div>
+            <p>Your email was sent. Thank you !</p>
+
+            <div class="nine columns main-col">
+                <h3><strong>{{ form.message }}</strong></h3>
+                <p>Here is the summary of what you wrote to us:</p>
+                {{ content }} {% include "forms/data.html.twig" %} <br /> Back to <a href="{{ base_url_absolute }}">homepage</a>.
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

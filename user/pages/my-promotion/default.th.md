@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: Style Guide
 ---
 
 #Style Guide.

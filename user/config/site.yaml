@@ -23,3 +23,5 @@ social:
      icon: twitter
   -  url: "https://www.youtube.com/user/TradeHeroMobile"
      icon: youtube  
+  -  url: "https://medium.com/tradehero"
+     icon: medium

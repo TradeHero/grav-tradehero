@@ -12,21 +12,21 @@ icon_apple_appstore: app-store-badge.svg
 icon_divider_vertical: divider_or_vertical.png
 icon_divider_horizontal: divider_or_horizontal.png
 process:
-  twig: true
+    twig: true
 qrcode:
-  parameters:
-    size: 400
-    foreground_color: "#aa00cc"
+    parameters:
+        size: 400
+        foreground_color: '#aa00cc'
 features:
     -
         text: 'Open a Live account in 5 minutes'
         icon: icon_time.png
     -
-        text: 'Zero commission on trades, no charges on deposits'
+        text: 'Zero commission on trades'
         icon: icon_percent.png
     -
         text: 'Play the market with virtual, toggle to Live for real money'
-        icon: icon_currency.png        
+        icon: icon_currency.png
 ---
 
 Download now to get started!

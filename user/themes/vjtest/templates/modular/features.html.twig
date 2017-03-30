@@ -36,9 +36,23 @@
                                 <br/>
                                 <ul>
                                     {% for feature in page.header.virtual_features_list %}
-                                        <li>{{feature.text}}</li>
+                                        <li>
+                                            {{feature.text}}
+                                            {% if feature.image %}
+                                                <br/><img src="{{ page.media[feature.image].url }}" />
+                                            {% endif %}
+                                        </li>
                                     {% endfor %}
                                 </ul>
+                                {% if page.header.virtual_features_special_notes %}
+                                    {% for specialnote in page.header.virtual_features_special_notes %}
+                                        {% if specialnote.url %}
+                                            <p><a href="{{specialnote.url}}">{{specialnote.text}}</a></p>
+                                        {% else %}
+                                            <p>{{specialnote.text}}</p>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -69,19 +83,28 @@
                             <div class="col-md-12">
                                 <br/>
                                 <br/>
-                                <h2>Live trading features</h2>
+                                <h2>{{page.header.live_features_title}}</h2>
                                 <br/>
                                 <br/>
                                 <ul>
-                                    <li>Trade multiple markets with ease <br/><img src="{{ page.media[page.header.flags_image].url }}" /> </li>
-                                    <li>Tight spreads, low funding and rollover costs</li>
-                                    <li>Only pay for the leverage used</li>
-                                    <li>Passing on 100% of dividends for UK and 85% for US shares</li>
-                                    <li>Free automatic guaranteed stops*</li>
+                                {% for feature in page.header.live_features_list %}
+                                        <li>
+                                            {{feature.text}}
+                                            {% if feature.image %}
+                                                <br/><img src="{{ page.media[feature.image].url }}" />
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
                                 </ul>
-                                <br/>
-                                <br/>
-                                <p>*Please note that free guaranteed stops do not apply to all products and are subject to trade size restrictions which vary for each product.</p>
+                                {% if page.header.live_features_special_notes %}
+                                    {% for specialnote in page.header.live_features_special_notes %}
+                                        {% if specialnote.url %}
+                                            <p><a href="{{specialnote.url}}">{{specialnote.text}}</a></p>
+                                        {% else %}
+                                            <p>{{specialnote.text}}</p>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
                             </div>
                         </div>
                     </div>

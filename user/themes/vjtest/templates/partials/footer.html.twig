@@ -1,6 +1,6 @@
 <footer style="overflow: hidden;">
     <div class="container">
-        <div class="row">
+        {#<div class="row">
             <div class="six columns info">
                 <div class="footer-logo">
                     <a href="{{ base_url_absolute }}">
@@ -11,24 +11,7 @@
                     {{ site.footer.text }}
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="md-col-6">
-                <div class="columns">
-                    <h3 class="address">{{ site.footer.address.title }}</h3>
-                    <p>
-                        {% for item in site.footer.address.lines %} {{ item.line }} <br> {% endfor %}
-                    </p>
-                </div>
-            </div>
-            <div class="md-col-6">
-                <ul class="footer-social">
-    {% for item in site.social %}
-        <li><a href="{{ item.url }}"><i class="fa fa-{{ item.icon }} fa-4x"></i></a></li>
-    {% endfor %}
-</ul>
-            </div>
-        </div>
+        </div>#}        
         <div class="row">
             <div class="footer-riskwarning">
                 <p><strong>{{'FOOTER.RISK_WARNING_TITLE'|t}}</strong></p>
@@ -38,10 +21,20 @@
                 {{'FOOTER.DISCLAIMER_TEXT'|t}}
             </div>
             <p>&nbsp;</p>
-            <p class="copyright">{{ 'FOOTER.TRADEMARK'|t }}</p>
+            <p class="copyright">{{ 'FOOTER.TRADEMARK'|t }}  |  <a href="{{'FOOTER.TERMS_CONDITIONS_URL'|t}}">{{'FOOTER.TERMS_CONDITIONS_TEXT'|t}}</a></p>
+            <p>
             <div id="go-top">
                 <p>&nbsp;</p>
                 <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="md-col-12">
+                <ul class="footer-social">
+                    {% for item in site.social %}
+                    <li><a href="{{ item.url }}"><i class="fa fa-{{ item.icon }} fa-2x"></i></a></li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
