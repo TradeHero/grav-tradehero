@@ -1,0 +1,9 @@
+<section id="redirect" class="redirect">
+{% if isUserAgent('AndroidOS') %}
+    {{header("Location: https://play.google.com/store/apps/details?id=com.tradehero.th&hl=en")}}
+{% elseif isUserAgent('iOS') %}
+    {{header("Location: https://itunes.apple.com/sg/app/tradehero/id572226383?mt=8")}}
+{% else %}
+{{header("Location: http://tradehero.mobi/DeepLink/Redirect")}}
+{% endif %}
+</section>

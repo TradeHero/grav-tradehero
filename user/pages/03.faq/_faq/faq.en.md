@@ -6,7 +6,7 @@ faqs:
         questions: 
             -
                 question: What is TradeHero?
-                answer: TradeHero is a gamified social trading app that allows you to trade and replicate the behaviour of other users automatically. It is ranked the #1 finance app in over 90 countries. You can learn how to trade, experiment with virtual cash, follow heroes , and compete in trading competitions. When you're ready, toggle the LIVE button to fund your account to start trading and replicating trades with real money.
+                answer: 'TradeHero is a gamified social trading app that allows you to trade and replicate the behaviour of other users automatically. It is ranked the #1 finance app in over 90 countries. You can learn how to trade, experiment with virtual cash, follow heroes , and compete in trading competitions. When you''re ready, toggle the LIVE button to fund your account to start trading and replicating trades with real money.'
             -   
                 question: Is TradeHero a free app?
                 answer: Yes, TradeHero is a free mobile app – free to download and free to use!

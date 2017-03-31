@@ -47,9 +47,9 @@
                                 {% if page.header.virtual_features_special_notes %}
                                     {% for specialnote in page.header.virtual_features_special_notes %}
                                         {% if specialnote.url %}
-                                            <p><a href="{{specialnote.url}}">{{specialnote.text}}</a></p>
+                                            <p style="padding-left: 15px;"><a href="{{specialnote.url}}">{{specialnote.text}}</a></p>
                                         {% else %}
-                                            <p>{{specialnote.text}}</p>
+                                            <p style="padding-left: 15px;">{{specialnote.text}}</p>
                                         {% endif %}
                                     {% endfor %}
                                 {% endif %}
@@ -99,9 +99,9 @@
                                 {% if page.header.live_features_special_notes %}
                                     {% for specialnote in page.header.live_features_special_notes %}
                                         {% if specialnote.url %}
-                                            <p><a href="{{specialnote.url}}">{{specialnote.text}}</a></p>
+                                            <p style="padding-left: 15px;"><a href="{{specialnote.url}}">{{specialnote.text}}</a></p>
                                         {% else %}
-                                            <p>{{specialnote.text}}</p>
+                                            <p style="padding-left: 15px;">{{specialnote.text}}</p>
                                         {% endif %}
                                     {% endfor %}
                                 {% endif %}
