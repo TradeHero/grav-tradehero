@@ -88,4 +88,5 @@ faqs:
                 text: '* Applicable to futures only'
             -
                 text: '**Please note that free guaranteed stops do not apply to all products and are subject to trade size restrictions which may vary for each product.'
+                
 ---

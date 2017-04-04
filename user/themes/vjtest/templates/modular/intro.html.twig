@@ -37,10 +37,12 @@
                             </div>
                         </div>
                         <div class="row">
-                            <p class="green-subtitile">{{page.header.download_title}}</p>
+                        <div class="col-md-4 col-sm-4"> &nbsp;</div>
+                        <div class="col-md-4 col-sm-4"><p class="green-subtitile">{{page.header.download_title}}</p></div>
+                        <div class="col-md-4 col-sm-4"> &nbsp;</div>                            
                         </div>
                         <div class="row" style="text-align: center;">
-                            <div class="col-md-4 col-sm-4">
+                            <div class="col-md-5 col-sm-5">
                             {#QR code goes here#}
                             <div>
                                 {{page.header.qr_text}}
@@ -55,7 +57,7 @@
                             <div class="col-md-2 col-sm-2 horizontal-hide">
                                 {{ page.media[page.header.icon_divider_horizontal].html() }}
                             </div>
-                            <div class="col-md-6 col-sm-6">
+                            <div class="col-md-5 col-sm-5">
                                 <div class="badges">
                                 </br></br>
                                     <div class="row">
