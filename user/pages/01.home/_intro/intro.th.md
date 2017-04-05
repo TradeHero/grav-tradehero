@@ -1,5 +1,5 @@
 ---
-title: 'Trade Real Money!'
+title: 'การค้าเงินจริง!'
 download_title: 'Download now!'
 qr_text: 'QR Code'
 new_badge: 2017_badge.png

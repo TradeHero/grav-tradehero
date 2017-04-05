@@ -10,6 +10,8 @@
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-itunes-app" content="app-id=572226383">
+    <meta name="google-play-app" content="app-id=com.tradehero.th">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
@@ -26,8 +28,11 @@
         {% do assets.addCss('theme://lib/device-mockups/device-mockups.min.css', 95) %}
         {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', 94) %}
         {% do assets.addCss('theme://css/new-age.min.css', 93) %}
-        {% do assets.addCss('theme://css/custom.css', 92) %}
-        {% do assets.addCss('theme://css/toggle.css', 91) %}
+        {% do assets.addCss('theme://lib/smart-app-banner/smart-app-banner.css', 92) %}
+        {% do assets.addCss('theme://css/custom.css', 91) %}
+        {% do assets.addCss('theme://css/toggle.css', 90) %}
+        
+        
     {% endblock %}
     {{ assets.css() }}    
     
@@ -71,9 +76,22 @@
     {% do assets.addJs('theme://js/jquery.fitvids.js') %}
     {% do assets.addJs('theme://js/imagelightbox.js') %}
     {% do assets.addJs('theme://js/jquery.prettyPhoto.js') %}
+    {% do assets.addJs('theme://lib/smart-app-banner/smart-app-banner.js') %} 
     {% do assets.addJs('theme://js/main.js') %}
-    {% do assets.addJs('theme://js/new-age.min.js') %}
+    {% do assets.addJs('theme://js/new-age.min.js') %}       
 {% endblock %}
 {{ assets.js() }}
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93239012-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>

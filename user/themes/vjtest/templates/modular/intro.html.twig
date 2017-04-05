@@ -6,7 +6,7 @@
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <div class="section-heading">
-                                    <h2>{{ page.media[page.header.new_badge].html() }}<strong>Trade Real Money!</strong></h2>
+                                    <h2>{{ page.media[page.header.new_badge].html() }}<strong>{{ page.header.title}}</strong></h2>
                                 </div>
                             </div>
                         </div>
@@ -77,10 +77,14 @@
                         <div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
                                 <div class="screen">
+                                    {% if isMobile() %}
+                                        <img src="{{ page.media[page.header.image_mobile_display].url }}" width="100%" alt="">
+                                    {% else %}
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <video autoplay loop style="width: 100%;">
-                                        <source src="{{ page.media[page.header.product_video].url }}" type="video/mp4">
-                                    </video>
+                                        <video autoplay loop style="width: 100%;">
+                                            <source src="{{ page.media[page.header.product_video].url }}" type="video/mp4">
+                                        </video>
+                                    {% endif %}
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
