@@ -2,13 +2,35 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-            [google-maps width='100%' lat=1.2938601 lng=103.8497706 zoom=20 scrollwheel=true panControl=true iconurl='/absolute/path/to/marker/icon.png']
-<strong>{{ page.header.officename }}</strong> </br>
-{{ page.header.addresslineone }} </br>
-{{ page.header.addresslinetwo }}
-[/google-maps]
+                <div id="exTab2" >
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#1" data-toggle="tab"><i class="icon-map-marker"></i> {{ page.header.Singapore }}</a>
+                        </li>
+                        <li><a href="#2" data-toggle="tab"><i class="icon-map-marker"></i> {{ page.header.london }}</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content ">
+                        <div class="tab-pane active" id="1">
+                            [google-maps width='100%' lat=1.2938601 lng=103.8497706 zoom=20 scrollwheel=true panControl=true iconurl='/absolute/path/to/marker/icon.png']
+                                <strong>{{ page.header.officename }}</strong> </br>
+                                {{ page.header.addresslineone }} </br>
+                                {{ page.header.addresslinetwo }}
+                            [/google-maps]
+                        </div>
+                        <div class="tab-pane" id="2">
+                            [google-maps width='100%' lat=51.5272628 lng=-0.0875034 zoom=20 scrollwheel=true panControl=true iconurl='/absolute/path/to/marker/icon.png']
+                                <strong>{{ page.header.london_officename }}</strong> </br>
+                                {{ page.header.london_addresslineone }} </br>
+                                {{ page.header.london_addresslinetwo }}
+                            [/google-maps]
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" style="padding-top: 30px;">
                 {% include "forms/form.html.twig" %}
             </div>
         </div>
