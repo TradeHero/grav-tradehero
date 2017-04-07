@@ -163,6 +163,11 @@ footer ul li a {
     padding: 0;
 }
 
+#styles p,
+#styles li {
+    font-size: 16px !important;
+}
+
 
 /* ------------------------------------------------------------------ */
 

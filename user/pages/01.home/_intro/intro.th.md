@@ -1,5 +1,9 @@
 ---
-title: 'การค้าเงินจริง!'
+title: การค้าเงินจริง!
+cache_enable: false
+process:
+    markdown: true
+    twig: true
 download_title: 'Download now!'
 qr_text: 'QR Code'
 new_badge: 2017_badge.png
@@ -12,8 +16,6 @@ icon_apple_appstore: app-store-badge.svg
 icon_divider_vertical: divider_or_vertical.png
 icon_divider_horizontal: divider_or_horizontal.png
 image_mobile_display: mobile-display.png
-process:
-    twig: true
 qrcode:
     parameters:
         size: 400
