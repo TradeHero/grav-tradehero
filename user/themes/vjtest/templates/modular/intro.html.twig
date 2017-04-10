@@ -81,9 +81,11 @@
                                         <img src="{{ page.media[page.header.image_mobile_display].url }}" width="100%" alt="">
                                     {% else %}
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                        <video autoplay loop style="width: 100%;">
-                                            <source src="{{ page.media[page.header.product_video].url }}" type="video/mp4">
-                                        </video>
+                                        {% cache 'intro_video_cache' 60000 %}
+                                            <video autoplay loop style="width: 100%;">
+                                                <source src="https://portalvhdskgrrf4wksb8vq.blob.core.windows.net/static/th-live/THero_Live_website_loop_3.mp4" type="video/mp4">
+                                            </video>
+                                        {% endcache %}
                                     {% endif %}
                                 </div>
                                 <div class="button">

@@ -10,7 +10,7 @@ new_badge: 2017_badge.png
 icon_one: icon_time.png
 icon_two: icon_percent.png
 icon_three: icon_currency.png
-product_video: THero_Live_website_loop.mp4
+product_video: THero_Live_website_loop_3.mp4
 icon_google_play: google-play-badge.svg
 icon_apple_appstore: app-store-badge.svg
 icon_divider_vertical: divider_or_vertical.png
