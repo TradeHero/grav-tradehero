@@ -75,5 +75,15 @@
     {% do assets.addJs('theme://js/new-age.min.js') %}
 {% endblock %}
 {{ assets.js() }}
+<script>
+  $(function() {
+    console.log( "ready!" );
+});
+    // Opening accordion based on URL
+var url = document.location.toString();
+if ( url.match('#') ) {
+    $('#'+url.split('#')[1]).addClass('in');
+}
+  </script>
 </body>
 </html>

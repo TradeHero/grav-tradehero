@@ -92,6 +92,7 @@
         $('.js #features .device-container').addClass("animated fadeInRightBig");
         $('.js #features .buttons a.trial').addClass("animated shake");
         $('#data-live').hide();
+        $('body').resize();
     })
 
 

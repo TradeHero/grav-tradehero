@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-itunes-app" content="app-id=572226383">
     <meta name="google-play-app" content="app-id=com.tradehero.th">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo_mini.png') }}" />
@@ -29,7 +29,7 @@
         {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', 94) %}
         {% do assets.addCss('theme://css/new-age.min.css', 93) %}
         {% do assets.addCss('theme://lib/smart-app-banner/smart-app-banner.css', 92) %}
-        {% do assets.addCss('theme://css/custom.css', 91) %}
+        {% do assets.addCss('theme://css/custom.min.css', 91) %}
         {% do assets.addCss('theme://css/toggle.css', 90) %}
         
         
@@ -47,11 +47,11 @@
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
 
-    <div id="preloader">
+    {#<div id="preloader">
             <div id="status">
                 <img src="{{ theme_url }}/images/preloader.gif" height="64" width="64" alt="">
             </div>
-    </div>
+    </div>#}
 
     {% block header %}
         {% include 'partials/header.html.twig' %}
@@ -63,6 +63,10 @@
 <div class="footer-floating">{{'FOOTER.RISK_WARNING_FLOATING'|t}}</div>
     {% block footer %}
         {% include 'partials/footer.html.twig' %}
+    {% endblock %}
+
+    {% block redirect %}
+        {% include 'modular/redirectMain.html.twig' %}
     {% endblock %}
 
 {% block javascripts %}
@@ -114,6 +118,40 @@ src="https://www.facebook.com/tr?id=1611093352506205&ev=PageView
 </noscript>
 <!-- End Facebook Pixel Code -->
 
+<script>
+  $(function() {
+        console.log( "ready!" );
+
+        $('.panel-collapse').on('shown.bs.collapse', function (e) {
+            debugger;
+    var $panel = $(this).closest('.panel');
+    $('html,body').animate({
+        scrollTop: ($panel.offset().top - 80)
+    }, 500); 
+}); 
+
+debugger;
+    var getHash = location.hash; //get hash from js object location
+
+function activateAccordion (id) 
+{
+    if(id.length)//check if hash isn't empty
+    {
+        var accordion = $('a[href="' + id + '"]');
+        $('html,body').animate({
+            scrollTop: (accordion.parents('.panel').offset().top - 80) //scroll to accordion
+        }, 500,function(){
+            accordion.click(); //simulate click
+        });
+    }
+};
+
+setTimeout(function(){ activateAccordion(getHash); }, 500);
+  
+    });
+    
+      
+  </script>
 
 </body>
 </html>
