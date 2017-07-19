@@ -6,5 +6,11 @@
     {% elseif isUserAgent('iOS') %}
         {{header("Location: https://itunes.apple.com/sg/app/tradehero/id572226383?mt=8")}}
     {% endif %}
+{% else %}
+        {% block javascripts %}
+        <script>
+            $('button.navbar-toggle').hide();
+        </script>
+        {% endblock %}
 {% endif %}
 </section>
